@@ -9,7 +9,7 @@ describe('olx.ro', ()=>{
         const logButton = await $ ('#topLoginLink');
         await expect(logButton).toBeDisplayed();   
     })
-    it('should open Apartamente-garsoniere de vanzare', async  ()=>{
+    it('should open Apartamente-garsoniere de vanzare page', async  ()=>{
         const imobiliare = await $('//*[@id="searchmain-container"]/div[2]/div/div[1]/div[3]/div/a');
         await imobiliare.click();
         const apartamente = await $('//*[@id="bottom3"]/ul/li[1]/a/span')
