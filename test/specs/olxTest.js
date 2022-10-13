@@ -14,7 +14,7 @@ describe('olx.ro', ()=>{
         await apartamente.click();
         await expect(browser).toHaveTitle("Anunturi Apartamente si garsoniere de vanzare ' OLX.ro")
     })
-    it('should have a working search', async ()=>{
+    it('should have a working search button', async ()=>{
         const searchBar = await $('#search');
         const searchBtn = await $('//*[@id="root"]/div[1]/div[2]/form/div[1]/div[3]/button')
 
