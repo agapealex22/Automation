@@ -1,6 +1,8 @@
 describe('olx.ro', ()=>{
     it('should have the correct page title', async ()=>{
         await browser.url('https://www.olx.ro/');
+        const acceptDataHandler = await $('#onetrust-accept-btn-handler');
+        await acceptDataHandler.click();
         await expect(browser).toHaveTitle('OLX - Cumpără și vinde'); 
     })
     it('should contain a login button', async ()=>{
